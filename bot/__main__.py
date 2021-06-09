@@ -52,12 +52,12 @@ def stats(update, context):
 @run_async
 def start(update, context):
     start_string = f'''
-This bot can mirror all your links to Google Drive!
+Im torrent miror bot. i can mirror all your links to Google Drive! powerd by @DataHoru_Internet and @SL_MEDIA_TECH_GRUOP
 Type /{BotCommands.HelpCommand} to get a list of available commands
 '''
     buttons = button_build.ButtonMaker()
-    buttons.buildbutton("Repo", "https://github.com/breakdowns/slam-mirrorbot")
-    buttons.buildbutton("Support Group", "https://t.me/SlamMirrorSupport")
+    buttons.buildbutton("shapport 01", "https://t.me/SL_MEDIA_TECH_GRUOP")
+    buttons.buildbutton("Support Group", "https://t.me/DataHoru_Internet")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     LOGGER.info('UID: {} - UN: {} - MSG: {}'.format(update.message.chat.id, update.message.chat.username, update.message.text))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
